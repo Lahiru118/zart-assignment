@@ -1,5 +1,5 @@
 import classes from "./HotCollection.module.css";
-import ProductCard from "../ProductCard/ProductCard";
+import Product from "../Product/Product";
 import LandRoverLogo from "../../image/land-rover-logo.svg";
 import Evoque from "../../image/evoque.png";
 import NissanLogo from "../../image/nissan-logo.svg";
@@ -71,7 +71,7 @@ const HotCollection = () => {
               },
               index
             ) => (
-              <ProductCard
+              <Product
                 key={index}
                 logo={brandLogo}
                 title={brandTitle}

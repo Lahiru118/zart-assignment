@@ -2,11 +2,11 @@ import { BsFillLightningChargeFill, BsArrowsVertical } from "react-icons/bs";
 import { FaDroplet, FaCar } from "react-icons/fa6";
 import { PiEngine } from "react-icons/pi";
 
-import classes from "./ProductCard.module.css";
+import classes from "./Product.module.css";
 
 import Stat from "../Stat/Stat";
 
-const ProductCard = ({
+const Product = ({
   logo,
   title,
   name,
@@ -64,4 +64,4 @@ const ProductCard = ({
   );
 };
 
-export default ProductCard;
+export default Product;

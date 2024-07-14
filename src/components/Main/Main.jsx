@@ -1,10 +1,10 @@
 import React from "react";
-import classes from "./MainSection.module.css";
+import classes from "./Main.module.css";
 import Greet from "../Greet/Greet";
 import HotCollections from "../HotCollections/Hotcollection";
 import Collections from "../Collections/Collections";
 
-const MainSection = () => {
+const Main = () => {
   return (
     <section className={classes.main}>
       <Greet />
@@ -16,4 +16,4 @@ const MainSection = () => {
   );
 };
 
-export default MainSection;
+export default Main;

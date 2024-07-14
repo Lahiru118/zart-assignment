@@ -1,7 +1,7 @@
 import HeaderContent from './components/HeaderContent/HeaderContent';
 import NavBar from "./components/NavBar/NavBar";
 import "./App.css";
-import MainSection from "./components/MainSection/MainSection";
+import Main from "./components/Main/Main";
 import Collections from './components/Collections/Collections';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
       <HeaderContent />
       <div className="container">
         <NavBar />
-        <MainSection />
+        <Main />
 
       </div>
       <div className="table-small">
