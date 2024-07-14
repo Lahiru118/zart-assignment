@@ -6,12 +6,10 @@ import classes from "./HeaderContent.module.css";
 const HeaderContent = () => {
   return (
     <header className={classes.header}>
-      <img src={Zart} className={classes.logo} />
-      <p>
+      <img src={Zart} className={classes.logo} alt="logo"/>
         <button className={classes.button}>
           <IoNotificationsOutline size={20} className={classes.stroke} />3
         </button>
-      </p>
     </header>
   );
 };

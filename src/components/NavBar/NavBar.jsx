@@ -1,16 +1,11 @@
 import React from "react";
 import {
-  IoHomeOutline,
-  IoHome,
   IoCarSportOutline,
-  IoCarSport,
-  IoBriefcaseOutline,
-  IoBriefcase,
-  IoChatbubbles,
-  IoChatbubblesOutline,
-  IoSettingsOutline,
-  IoSettings,
+  IoBagHandleOutline ,
+  IoChatboxOutline ,
+  IoSettingsOutline
 } from "react-icons/io5";
+import { AiOutlineHome } from "react-icons/ai";
 
 import Profile from "../../image/person.png";
 import classes from "./NavBar.module.css";
@@ -20,11 +15,11 @@ const NavBar = () => {
   return (
     <div className={classes.NavBar}>
       <div className={classes.iconContainer}>
-        <ReactIcon Regular={IoHomeOutline} Solid={IoHomeOutline} />
-        <ReactIcon Regular={IoCarSportOutline} Solid={IoCarSport} />
-        <ReactIcon Regular={IoBriefcaseOutline} Solid={IoBriefcase} />
-        <ReactIcon Regular={IoChatbubblesOutline} Solid={IoChatbubbles} />
-        <ReactIcon Regular={IoSettingsOutline} Solid={IoSettings} />
+        <ReactIcon Regular={AiOutlineHome} Solid={AiOutlineHome} />
+        <ReactIcon Regular={IoCarSportOutline} Solid={IoCarSportOutline} />
+        <ReactIcon Regular={IoBagHandleOutline} Solid={IoBagHandleOutline} />
+        <ReactIcon Regular={IoChatboxOutline} Solid={IoChatboxOutline} />
+        <ReactIcon Regular={IoSettingsOutline} Solid={IoSettingsOutline} />
       </div>
       <div>
         <button className={classes.profileButton}>

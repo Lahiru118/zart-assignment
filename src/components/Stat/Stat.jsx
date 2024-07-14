@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Stat.module.css";
 
 const Stat = ({
-  style = { width: "30%", height: "25%" },
+  style,
   children,
   dispText,
   dispLight,

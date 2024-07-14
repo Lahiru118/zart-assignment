@@ -19,7 +19,7 @@ const ProductCard = ({
   total,
   style,
   bhpStyle,
-  runStyle
+  runStyle,
 }) => {
   return (
     <div className={classes.card} style={style}>
@@ -31,7 +31,11 @@ const ProductCard = ({
             <p className={classes.light}>{name}</p>
           </div>
         </div>
-        <img src={image} alt="Land Rover Evoque" className={classes.cardImage} />
+        <img
+          src={image}
+          alt="Land Rover Evoque"
+          className={classes.cardImage}
+        />
         <div className={classes.priceInfo}>
           <p className={classes.light}>ASKING PRICE</p>
           <h2>
@@ -40,23 +44,19 @@ const ProductCard = ({
         </div>
       </div>
       <div className={classes.statsContainer}>
-        <Stat dispText={cc}>
+        <Stat dispText={cc} style={{ width: "30%", height: "25%", backgroundColor:"#EDECEC"}}>
           <BsFillLightningChargeFill />
         </Stat>
         <Stat style={bhpStyle} dispText={bhp}>
           <BsArrowsVertical />
         </Stat>
-        <Stat dispText={speed}>
+        <Stat dispText={speed} style={{ width: "30%", height: "25%", backgroundColor:"#DFE0E7"}}>
           <FaDroplet />
         </Stat>
         <Stat style={{ width: "30%", height: "21%" }} dispText={cylinders}>
           <PiEngine />
         </Stat>
-        <Stat
-          style={runStyle}
-          dispText="Total Run: "
-          dispLight={total}
-        >
+        <Stat style={runStyle} dispText="Total Run: " dispLight={total}>
           <FaCar />
         </Stat>
       </div>
